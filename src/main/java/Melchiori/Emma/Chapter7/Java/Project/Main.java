@@ -62,11 +62,11 @@ public class Main {
 		textField_1.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Numerator");
-		lblNewLabel.setBounds(49, 84, 65, 14);
+		lblNewLabel.setBounds(36, 84, 65, 14);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Denominator");
-		lblNewLabel_1.setBounds(49, 130, 65, 14);
+		lblNewLabel_1.setBounds(36, 130, 78, 14);
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Result");
