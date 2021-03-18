@@ -10,5 +10,10 @@ public class SimpleMath {
 		System.out.println(result);
 		
 		return result;
+	
+	}
+	public double multiply(double number1, double number2) {
+		double result = number1*number2;
+		return result;
 	}
 }
