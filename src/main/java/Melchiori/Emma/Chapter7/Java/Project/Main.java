@@ -70,7 +70,7 @@ public class Main {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Result");
-		lblNewLabel_2.setBounds(185, 181, 49, 14);
+		lblNewLabel_2.setBounds(185, 181, 148, 14);
 		frame.getContentPane().add(lblNewLabel_2);
 		
 		JButton btnNewButton = new JButton("Calculate");
@@ -82,11 +82,12 @@ public class Main {
 		@Override
 		public void mouseClicked(MouseEvent e) {
 			double numerator = Double.parseDouble(textField.getText());
-			double denominator = Double.parseDouble(textField.getText());
+			double denominator = Double.parseDouble(textField_1.getText());
 			SimpleMath MathObject = new SimpleMath();
-			Double result = MathObject.divide(numerator, denominator);
+			
 			
 			try {
+				Double result = MathObject.divide(numerator, denominator);
 				lblNewLabel_2.setText(result.toString());
 			} catch (ArithmeticException f) {
 				lblNewLabel_2.setText("Cannot divide by 0");
